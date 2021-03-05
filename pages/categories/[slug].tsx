@@ -1,10 +1,15 @@
-import { useRouter } from 'next/router'
+import { useRouter } from "next/router";
+import Layout from "../../components/layout";
 
 const Categories = () => {
-  const router = useRouter()
-  const { slug } = router.query
+  const router = useRouter();
+  const { slug } = router.query;
 
-  return <p>Categories: {slug}</p>
-}
+  return (
+    <Layout>
+      <p>Categories: {slug}</p>
+    </Layout>
+  );
+};
 
-export default Categories
+export default Categories;

@@ -1,5 +1,11 @@
-const Archive = () => {
-  return <p>Archive page</p>
-}
+import Layout from "../components/layout";
 
-export default Archive
+const Archive = () => {
+  return (
+    <Layout>
+      <p>Archive page</p>
+    </Layout>
+  );
+};
+
+export default Archive;
