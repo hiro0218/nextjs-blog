@@ -13,9 +13,6 @@ export default function Home() {
       <Layout>
         <ul>
           <li>
-            <Link href="/20210218.html">Post</Link>
-          </li>
-          <li>
             <Link href="/categories/TypeScript">Category</Link>
           </li>
           <li>
