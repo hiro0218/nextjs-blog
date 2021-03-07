@@ -1,16 +1,16 @@
 import fs from "fs-extra";
 import path from "path";
-import { useRouter } from "next/router";
 import Layout from "../components/layout";
 
-const Post = ({ blog }) => {
-  const router = useRouter();
-  const { post_slug } = router.query;
-
+const Post = ({ post }) => {
   return (
     <Layout>
-      <h1>{blog.title}</h1>
-      <p>Post[post_slug]: {post_slug}</p>
+      <h1>{post.title}</h1>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `${post.content}`,
+        }}
+      />
     </Layout>
   );
 };
@@ -36,7 +36,7 @@ export const getStaticProps = async (context) => {
 
   return {
     props: {
-      blog: postData,
+      post: postData,
     },
   };
 };
