@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import TheHeader from "../components/TheHeader";
 class SampleDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -13,6 +13,7 @@ class SampleDocument extends Document {
           <link rel="dns-prefetch" href="//www.google.co.jp" />
         </Head>
         <body>
+          <TheHeader />
           <Main />
           <NextScript />
         </body>
