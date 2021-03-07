@@ -1,5 +1,11 @@
+import Link from "next/link";
+
 const TheHeader = () => {
-  return <header>Header</header>;
+  return (
+    <header>
+      <Link href="/">Home</Link>
+    </header>
+  );
 };
 
 export default TheHeader;

@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import TheHeader from "../components/TheHeader";
+import TheFooter from "../components/TheFooter";
 class SampleDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -15,6 +16,7 @@ class SampleDocument extends Document {
         <body>
           <TheHeader />
           <Main />
+          <TheFooter />
           <NextScript />
         </body>
       </Html>

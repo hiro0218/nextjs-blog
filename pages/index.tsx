@@ -13,15 +13,6 @@ export default function Home() {
       <Layout>
         <ul>
           <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/archive">Archive</Link>
-          </li>
-          <li>
             <Link href="/20210218.html">Post</Link>
           </li>
           <li>
